@@ -5,9 +5,17 @@
         <img class="logomarca" src="../../assets/img/Loseaum.png" alt="Logo" />
       </div>
       <div class="col-8">
-        <button class="btn">Home</button>
-        <button class="btn">Album</button>
-        <button class="btn">Contato</button>
+        <router-link to="/">
+          <button class="btn">Home</button>
+        </router-link>
+        <a href="#" v-scroll-to="'#album'">
+          <button class="btn">
+              Album
+          </button>
+        </a>
+        <a href="#" v-scroll-to="'#contact'">
+          <button class="btn">Contato</button>
+        </a>
       </div>
     </div>
     <div class="row" style="margin-top: 50px; background-color: #352D39;">
@@ -25,7 +33,6 @@
 
 <script>
 export default {
-
 }
 </script>
 
