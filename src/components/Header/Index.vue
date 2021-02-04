@@ -25,11 +25,11 @@
         </div>
       </div>
     </div>
-    <div class="row" style="margin-top: 50px; background-color: #352D39;">
-      <div class="col-8">
+    <div id="info" class="row" style="margin-top: 50px; background-color: #352D39;">
+      <div class="col-md-8">
         <h1 class="title-box" style="color: #fff;">SIMPLIQUE SEU NEGÓCIO | <br /> <span style="color: #E547FF">MOKIT DIGITAL</span></h1>
       </div>
-      <div class="col-4">
+      <div class="col-md-4 text-center">
         <div class="button-box">
           <button class="btn btn-orc">Faça um orçamento</button>
         </div>
@@ -49,9 +49,11 @@ export default {
     getMenu () {
       if (this.fecha === false) {
         document.getElementById('list-menu').style.display = 'block'
+        document.getElementById('info').style.display = 'none'
         this.fecha = true
       } else {
         document.getElementById('list-menu').style.display = 'none'
+        document.getElementById('info').style.display = 'block'
         this.fecha = false
       }
     }
@@ -110,6 +112,7 @@ export default {
   .btn-orc {
     background-color:#fff ;
     color: #000;
+    margin-bottom: 20px;
   }
 }
 
@@ -121,7 +124,7 @@ export default {
 
 @media screen and (max-width: 780px) {
   .background {
-    height: 80vh;
+    height: 120vh;
     .menu {
       display: block;
       float: right;
