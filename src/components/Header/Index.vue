@@ -31,7 +31,9 @@
       </div>
       <div class="col-md-4 text-center">
         <div class="button-box">
-          <button class="btn btn-orc">Faça um orçamento</button>
+          <a href="#" v-scroll-to="'#contact'">
+            <button class="btn btn-orc">Faça um orçamento</button>
+          </a>
         </div>
       </div>
     </div>
