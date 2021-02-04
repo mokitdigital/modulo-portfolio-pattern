@@ -4,18 +4,25 @@
       <div class="col-4">
         <img class="logomarca" src="../../assets/img/Loseaum.png" alt="Logo" />
       </div>
-      <div class="col-8">
-        <router-link to="/">
-          <button class="btn">Home</button>
-        </router-link>
-        <a href="#" v-scroll-to="'#album'">
-          <button class="btn">
-              Album
-          </button>
-        </a>
-        <a href="#" v-scroll-to="'#contact'">
-          <button class="btn">Contato</button>
-        </a>
+      <div class="col-8" style="padding-right: 30px">
+        <a href="#" @click="getMenu()" class="menu">&#9776;</a>
+        <div id="list-menu">
+          <a href="#" v-scroll-to="'#header'">
+            <button class="btn btn-menu">
+              Home
+            </button>
+          </a>
+          <a href="#" v-scroll-to="'#album'">
+            <button class="btn btn-menu">
+                Album
+            </button>
+          </a>
+          <a href="#" v-scroll-to="'#contact'">
+            <button class="btn btn-menu">
+              Contato
+            </button>
+          </a>
+        </div>
       </div>
     </div>
     <div class="row" style="margin-top: 50px; background-color: #352D39;">
@@ -33,6 +40,22 @@
 
 <script>
 export default {
+  data () {
+    return {
+      fecha: false
+    }
+  },
+  methods: {
+    getMenu () {
+      if (this.fecha === false) {
+        document.getElementById('list-menu').style.display = 'block'
+        this.fecha = true
+      } else {
+        document.getElementById('list-menu').style.display = 'none'
+        this.fecha = false
+      }
+    }
+  }
 }
 </script>
 
@@ -48,6 +71,16 @@ export default {
         fixed;
   height: 70vh;
   border-bottom: 3px solid #fff;
+
+  .menu {
+    display: none;
+    font-size: 50px;
+    font-weight: 800;
+  }
+
+  #list-menu{
+    display: inline-block;
+  }
 
   .logomarca {
     padding: 30px 0 0 30px;
@@ -77,6 +110,47 @@ export default {
   .btn-orc {
     background-color:#fff ;
     color: #000;
+  }
+}
+
+@media screen and (max-width: 1096px) {
+  .title-box {
+    font-size: 30px;
+  }
+}
+
+@media screen and (max-width: 780px) {
+  .background {
+    height: 80vh;
+    .menu {
+      display: block;
+      float: right;
+      margin: 20px 50px 0 0;
+      text-decoration: none;
+      color: #000;
+    }
+    #list-menu {
+      display: none;
+      float: right;
+      width: 80%;
+      height: 50vh;
+      margin-right: 20px;
+      z-index: 1;
+      background: rgba(255, 255, 255, 0.46);
+      overflow: auto;
+      transition-duration: 2s;
+      .btn-menu {
+        width: 90%;
+        background-color: transparent;
+      }
+      .btn-menu:hover{
+        background-color: rgba(0, 0, 0, 0.412);
+      }
+    }
+    #list-menu:hover{
+      width: 100%;
+      transition: width 2s;
+    }
   }
 }
 </style>

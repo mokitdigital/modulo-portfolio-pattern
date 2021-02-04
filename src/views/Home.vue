@@ -1,6 +1,6 @@
 <template>
   <div class="home">
-    <Header />
+    <Header id="header" />
     <Photos id="album" />
     <Contact id="contact" />
     <Footer />

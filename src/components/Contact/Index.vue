@@ -21,9 +21,9 @@ export default {
 .background {
   background: url('../../assets/img/contact.png') fixed;
   background-size: 100%;
-  height: 60vh;
+  height: 70vh;
   form{
-    height: 60vh;
+    height: 70vh;
     background: transparent;
     input {
       width: 50%;

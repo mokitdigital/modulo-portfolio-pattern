@@ -1,7 +1,22 @@
 <template>
-  <router-view/>
+  <div>
+    <router-view />
+  </div>
 </template>
+<script>
+import { onBeforeMount, onMounted } from 'vue'
 
+export default {
+  setup () {
+    onMounted(() => {
+      console.log('Olá 1')
+    })
+    onBeforeMount(() => {
+      console.log('Olá 2')
+    })
+  }
+}
+</script>
 <style lang="scss">
 body{
   margin: -20px 0 0 0;
