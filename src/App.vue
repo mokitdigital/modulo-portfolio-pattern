@@ -9,7 +9,8 @@ import AOS from 'aos'
 export default {
   created () {
     AOS.init({
-      delay: 1000
+      delay: 1000,
+      anchorPlacement: 'top-bottom'
     })
   }
 }

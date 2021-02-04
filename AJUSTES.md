@@ -5,11 +5,11 @@
 - <s>Aumentar o *padding* da div *Simplifique seu negócio...*</s>
 - <s>Colocar margem em div *Simplifique seu negócio...*</s>
 - <s>Animações apenas ao rolar a página</s>
-- "Quebrar" margem das imagens à direita
-- Estruturar o footer com 3 colunas
+- <s>"Quebrar" margem das imagens à direita</s>
+- <s>Estruturar o footer com 3 colunas
   1. Sobre a empresa/negócio/profissional
   2. Pré-menu para localização das páginas
-  3. Contato de redes sociais, etc.
+  3. Contato de redes sociais, etc.</s>
 - Adicionar *button* flutuante para subir página
 
 ## Mobile

@@ -3,6 +3,7 @@
     <Header id="header" />
     <Photos id="album" />
     <Contact id="contact" />
+    <Button />
     <Footer />
   </div>
 </template>
@@ -13,6 +14,7 @@ import Header from '@/components/Header/Index.vue'
 import Photos from '@/components/Photos/Index.vue'
 import Contact from '@/components/Contact/Index.vue'
 import Footer from '@/components/Footer/Index.vue'
+import Button from '@components/ButtonTop/Index.vue'
 
 export default {
   name: 'Home',
@@ -20,7 +22,8 @@ export default {
     Header,
     Photos,
     Contact,
-    Footer
+    Footer,
+    Button
   }
 }
 </script>
