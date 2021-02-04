@@ -2,26 +2,26 @@
   <div class="background">
     <div class="row">
       <div class="col-md images-box">
-        <img src="https://picsum.photos/400" class="animate__animated animate__backInLeft animate__slow" alt="" />
+        <img src="https://picsum.photos/400" class="animate__animated animate__backInLeft animate__slow animate__delay-2s" alt="" />
       </div>
       <div class="col-md images-box">
-        <img src="https://picsum.photos/400" class="animate__animated animate__backInRight animate__slow" alt="" />
-      </div>
-    </div>
-    <div class="row">
-      <div class="col-md images-box">
-        <img src="https://picsum.photos/400" class="animate__animated animate__backInLeft animate__slow" alt="" />
-      </div>
-      <div class="col-md images-box">
-        <img src="https://picsum.photos/400" class="animate__animated animate__backInRight animate__slow" alt="" />
+        <img src="https://picsum.photos/400" class="animate__animated animate__backInRight animate__slow animate__delay-2s" alt="" />
       </div>
     </div>
     <div class="row">
       <div class="col-md images-box">
-        <img src="https://picsum.photos/400" class="animate__animated animate__backInLeft animate__slow" alt="" />
+        <img src="https://picsum.photos/400" class="animate__animated animate__backInLeft animate__slow animate__delay-2s" alt="" />
       </div>
       <div class="col-md images-box">
-        <img src="https://picsum.photos/400" class="animate__animated animate__backInRight animate__slow" alt="" />
+        <img src="https://picsum.photos/400" class="animate__animated animate__backInRight animate__slow animate__delay-2s" alt="" />
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-md images-box">
+        <img src="https://picsum.photos/400" class="animate__animated animate__backInLeft animate__slow animate__delay-2s" alt="" />
+      </div>
+      <div class="col-md images-box">
+        <img src="https://picsum.photos/400" class="animate__animated animate__backInRight animate__slow animate__delay-2s" alt="" />
       </div>
     </div>
   </div>
