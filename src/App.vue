@@ -4,15 +4,12 @@
   </div>
 </template>
 <script>
-import { onBeforeMount, onMounted } from 'vue'
+import AOS from 'aos'
 
 export default {
-  setup () {
-    onMounted(() => {
-      console.log('Olá 1')
-    })
-    onBeforeMount(() => {
-      console.log('Olá 2')
+  created () {
+    AOS.init({
+      delay: 1000
     })
   }
 }

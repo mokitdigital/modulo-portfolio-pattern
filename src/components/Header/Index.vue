@@ -25,7 +25,7 @@
         </div>
       </div>
     </div>
-    <div id="info" class="row" style="margin-top: 50px; background-color: #352D39;">
+    <div id="info" class="row">
       <div class="col-md-8">
         <h1 class="title-box" style="color: #fff;">SIMPLIQUE SEU NEGÓCIO | <br /> <span style="color: #E547FF">MOKIT DIGITAL</span></h1>
       </div>
@@ -80,6 +80,12 @@ export default {
     display: none;
     font-size: 50px;
     font-weight: 800;
+  }
+
+  #info{
+    margin: 80px 0 0 0;
+    background-color: #352D39;
+    padding-bottom: 50px;
   }
 
   #list-menu{
