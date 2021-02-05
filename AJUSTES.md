@@ -20,9 +20,18 @@ max-width: 450px;
 ~~~~
 
 - Diminuir a fonte da div *Simplifique seu negócio...*
+~~~~ css
+max-width: 450px;
+~~~~
+
 - Centralizar *button* __faça um orçamento__
+<space></space>
 - Aumentar imagem a partir de 
 ~~~ css
 max-width: 905px;
 ~~~
-animate__backInLeft animate__slow animate__delay-2s animate__repeat-2
+
+- Diminuir header ao abrir o menu
+~~~~ css
+max-width: 450px;
+~~~~
